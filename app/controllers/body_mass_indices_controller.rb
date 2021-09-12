@@ -1,0 +1,2 @@
+class BodyMassIndicesController < ApplicationController
+end

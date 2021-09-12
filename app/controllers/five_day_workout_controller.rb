@@ -1,0 +1,2 @@
+class FiveDayWorkoutController < ApplicationController
+end
