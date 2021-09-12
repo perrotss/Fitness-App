@@ -1,0 +1,2 @@
+class ThreeDayWorkout < ApplicationRecord
+end
