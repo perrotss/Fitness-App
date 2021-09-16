@@ -1,5 +1,5 @@
 class BodyMassIndicesController < ApplicationController
-  def new
+  def index
     @bmi = BodyMassIndex.new
   end
 end
