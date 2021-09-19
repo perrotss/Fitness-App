@@ -1,7 +1,13 @@
+ <body>
 <h1>BMI Calculator</h1>
   <%= simple_form_for @bmi do |f| %>
     <%= f.input :feet %>
     <%= f.input :inches %>
     <%= f.input :pounds %>
-    <%= f.submit %>
+    <%= f.submit "Calculate" %>
   <% end %>
+
+  <h1>Result</h1>
+  <h2>YOUR BMI</h2>
+  <h2 class="Result"></h2>
+ </body>
