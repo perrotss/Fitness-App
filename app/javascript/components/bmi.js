@@ -1,15 +1,15 @@
-// Load all the channels within this directory and all subdirectories.
-// Channel files must be named *_channel.js.
+const apiKey = '6f8998296dmsh8a7269c19e83760p1a8787jsncdaeb262681c';
 
-const channels = require.context('.', true, /_channel\.js$/)
-channels.keys().forEach(channels)
+const bmiCall = () => {
+	console.log("hellos")
+	fetch(`https://body-mass-index-bmi-calculator.p.rapidapi.com/imperial?weight=150&height=68&rapidapi-key=${apiKey}`)
+	.then(response => response.json())
+	.then(data => console.log(data))
+.catch(err => console.error(err));
+};
 
-// API_KEY: '6f8998296dmsh8a7269c19e83760p1a8787jsncdaeb262681c'
+export { bmiCall };
 
-// fetch("https://body-mass-index-bmi-calculator.p.rapidapi.com/imperial?weight=150&height=68&rapidapi-key=6f8998296dmsh8a7269c19e83760p1a8787jsncdaeb262681c")
-// 	.then(response => response.json())
-// 	.then(data => console.log(data))
-// .catch(err => console.error(err));
 
 // let bmi = {
 	// API_KEY: '6f8998296dmsh8a7269c19e83760p1a8787jsncdaeb262681c'
