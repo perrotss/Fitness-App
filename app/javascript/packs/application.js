@@ -17,7 +17,8 @@ import 'bootstrap';
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 import { bmiCall } from "../components/bmi";
-document.addEventListener("DOMContentLoaded", () => {
+
+document.addEventListener("load", () => {
   bmiCall();
 })
 
