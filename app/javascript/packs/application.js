@@ -18,7 +18,6 @@ import 'bootstrap';
 // const imagePath = (name) => images(name, true)
 import { bmiCall } from "../components/bmi";
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("hello")
   bmiCall();
 })
 
