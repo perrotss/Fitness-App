@@ -7,17 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
 
   <body>
-  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-
-      <div><li><%= link_to "About", about_path %></li></div>
-      <div><li><%= link_to "BMI Calulator", body_mass_indices_path %></li></div>
-      <%# <div><li><%= link_to "Three Day Workouts", three_day_workout_path %></li></div>
-      <%# <div><li><%= link_to "Five Day Workouts", five_day_workout_path %></li></div>
-      </div>
+  <div class="navbar">
+    <%= link_to "Home", root_path%>
+    <%= link_to "BMI Calulator", body_mass_indices_path %>
+    <%= link_to "About", about_path %>
+  <div class="dropdown">
+    <button class="dropbtn">Workouts
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content"> 
+      <%= link_to "Three Day Split", three_day_workouts_path %>
+      <%= link_to "Five Day Split", five_day_workouts_path %>
+    </div>
+  </div>
+</div>
     <%= yield %>
   </body>
+
+  <div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    This website is made with <i class="fas fa-heart"></i> in Montreal
+  </div>
+</div> 
 </html>
