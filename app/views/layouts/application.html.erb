@@ -11,13 +11,19 @@
   </head>
 
   <body>
-  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-
-      <div><li><%= link_to "About", about_path %></li></div>
-      <div><li><%= link_to "BMI Calulator", body_mass_indices_path %></li></div>
-      <%# <div><li><%= link_to "Three Day Workouts", three_day_workout_path %></li></div>
-      <%# <div><li><%= link_to "Five Day Workouts", five_day_workout_path %></li></div>
-      </div>
+  <div class="navbar">
+    <%= link_to "BMI Calulator", body_mass_indices_path %>
+    <%= link_to "About", about_path %>
+  <div class="dropdown">
+    <button class="dropbtn">Workouts
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content"> 
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+    </div>
+  </div>
+</div>
     <%= yield %>
   </body>
 </html>
