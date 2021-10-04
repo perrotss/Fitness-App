@@ -13,6 +13,7 @@
 
   <body>
   <div class="navbar">
+    <%= link_to "Home", root_path%>
     <%= link_to "BMI Calulator", body_mass_indices_path %>
     <%= link_to "About", about_path %>
   <div class="dropdown">
@@ -20,8 +21,8 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content"> 
-      <%= link_to "Five Day Split", five_day_workouts_path %>
       <%= link_to "Three Day Split", three_day_workouts_path %>
+      <%= link_to "Five Day Split", five_day_workouts_path %>
     </div>
   </div>
 </div>
