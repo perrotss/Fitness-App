@@ -2,11 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-.container{
+#fiveday{
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.2fr;
+  text-align: center;
 }
 
 #fivebox2, #fivebox4, #fivebox6{

@@ -2,11 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-.container{
+#threeday{
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.2fr;
+  text-align: center;
 }
 
 #threebox1, #threebox3, #threebox5, #threebox7{
