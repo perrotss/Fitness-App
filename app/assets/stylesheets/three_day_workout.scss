@@ -1,3 +1,18 @@
 // Place all the styles related to the three_day_workout controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.container{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr;
+}
+
+#threebox1, #threebox3, #threebox5, #threebox7{
+  background-color: white;
+}
+
+#threebox2, #threebox4, #threebox6{
+  background-color: azure;
+}
