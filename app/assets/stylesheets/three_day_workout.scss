@@ -2,6 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+
+#full-workout {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 #threeday{
   display: grid;
   height: 200px;
