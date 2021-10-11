@@ -1,6 +1,29 @@
 
 <h1>BMI Calculator</h1>
-  <div class="container">
+<div class="login-box">
+  <form id="form">
+    <div class="user-box">
+      <input type="text" placeholder="Feet" id="feet" name="" required="">
+    </div>
+    <div class="user-box">
+      <input type="text" id="inches" placeholder="Inches" name="">
+    </div>
+	<div class="user-box">
+      <input type="text" id="weight" placeholder="Weight" name="">
+    </div>
+    <a href="#" id="submit">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Submit
+    </a>
+  </form>
+<br>
+    <h2 id="bmi-result">Your BMI</h2>
+  <h2 id="result"></h2>
+</div>
+  <%# <div class="container">
       <div class="row">
         <div id="" class="col-sm-8 offset-sm-2">
           <form id="form" class="form-inline my-5">
@@ -12,12 +35,9 @@
                 </div>
               </div>
             </div>  
-  </body>
-</html>
+  </body> %>
 
-  <h2>YOUR BMI</h2>
-  <h2 id="result"></h2>
-
+<div class="container" id="bmi-table">
 <table border="0" style="width:200px">
 	<tbody>
 		<tr>
@@ -38,3 +58,4 @@
 		</tr>
 	</tbody>
 </table>
+</div>

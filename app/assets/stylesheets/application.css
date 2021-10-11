@@ -29,6 +29,9 @@
     font-size: 30px;
     }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&display=swap');
+
 .flex {
     padding: 0;
     margin: 0;
@@ -42,4 +45,12 @@
     
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
+  }
+
+  .fa-github:before {
+    color: white;
+  }
+
+  .fa-linkedin:before {
+      color: white;
   }

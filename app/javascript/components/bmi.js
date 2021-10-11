@@ -5,7 +5,7 @@ const bmiCall = () => {
 	const feet = document.querySelector('#feet').value;
 	const inches = document.querySelector('#inches').value;
 	const weight1 = document.querySelector('#weight').value;
-	const form = document.querySelector('#form');
+	const form = document.querySelector('#submit');
 	const result = document.getElementById('result');
 	const weight = (+weight1);
 	const height = (feet * 12 + +inches);
@@ -19,7 +19,7 @@ const bmiCall = () => {
 });
 };
 
-form.addEventListener('submit', (event) => {
+form.addEventListener('click', (event) => {
 	event.preventDefault();
 	bmiCall(result.value);
 });
