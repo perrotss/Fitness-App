@@ -15,7 +15,6 @@
   <div class="navbar">
     <%= link_to "Home", root_path%>
     <%= link_to "BMI Calulator", body_mass_indices_path %>
-    <%= link_to "About", about_path %>
   <div class="dropdown">
     <button class="dropbtn">Workouts
       <i class="fa fa-caret-down"></i>
@@ -25,6 +24,7 @@
       <%= link_to "Five Day Split", five_day_workouts_path %>
     </div>
   </div>
+  <%= link_to "About", about_path %>
 </div>
     <%= yield %>
   </body>
@@ -32,7 +32,6 @@
   <div class="footer">
   <div class="footer-links">
     <a href="#"><i class="fab fa-github"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
     <a href="#"><i class="fab fa-linkedin"></i></a>
   </div>
   <div class="footer-copyright">
