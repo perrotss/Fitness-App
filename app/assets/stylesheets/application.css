@@ -54,3 +54,7 @@
   .fa-linkedin:before {
       color: white;
   }
+
+  h1{
+    text-decoration: underline;
+  }
