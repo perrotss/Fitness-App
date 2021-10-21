@@ -15,7 +15,7 @@
  */
 
 /* @import "font-awesome-sprockets"; */
-@import "font-awesome";
+/* @import "font-awesome"; */
 @import "font-awesome-regular";
 
 @media screen and (min-width: 601px) {
